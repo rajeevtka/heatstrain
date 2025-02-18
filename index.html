@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Worker Heat Stress Monitor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Worker Heat Stress Monitor</h1>
+        
+        <div class="search-box">
+            <input type="text" id="location" placeholder="Enter location">
+            <button onclick="getWeather()">Check Weather</button>
+        </div>
+
+        <div class="weather-info">
+            <div class="current-weather">
+                <h2>Current Weather</h2>
+                <div id="weather-display">
+                    <div class="temperature">
+                        <span id="temp">--</span>°C
+                    </div>
+                    <div class="humidity">
+                        Humidity: <span id="humidity">--</span>%
+                    </div>
+                    <div class="feels-like">
+                        Feels like: <span id="feels-like">--</span>°C
+                    </div>
+                </div>
+            </div>
+
+            <div class="warning-box" id="warning-box">
+                <h3>Heat Stress Warning</h3>
+                <p id="warning-message"></p>
+                <div id="recommendations"></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

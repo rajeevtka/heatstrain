@@ -1,0 +1,19 @@
+{
+  "name": "worker-heat-stress-monitor",
+  "version": "1.0.0",
+  "description": "A mobile application for monitoring worker heat stress conditions",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx cap serve",
+    "build": "npx cap sync",
+    "add-android": "npx cap add android",
+    "open-android": "npx cap open android"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@capacitor/android": "^5.7.8",
+    "@capacitor/cli": "^5.7.8",
+    "@capacitor/core": "^5.7.8"
+  }
+}
